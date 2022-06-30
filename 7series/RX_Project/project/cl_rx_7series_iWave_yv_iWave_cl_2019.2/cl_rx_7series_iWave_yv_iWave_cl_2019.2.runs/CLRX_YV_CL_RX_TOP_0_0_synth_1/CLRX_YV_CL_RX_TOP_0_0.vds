@@ -1,0 +1,1570 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jun 20 16:45:23 2022
+# Process ID: 15889
+# Current directory: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/CLRX_YV_CL_RX_TOP_0_0_synth_1
+# Command line: vivado -log CLRX_YV_CL_RX_TOP_0_0.vds -tempDir logs/ -product Vivado -mode batch -messageDb vivado.pb -notrace -source CLRX_YV_CL_RX_TOP_0_0.tcl
+# Log file: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/CLRX_YV_CL_RX_TOP_0_0_synth_1/CLRX_YV_CL_RX_TOP_0_0.vds
+# Journal file: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/CLRX_YV_CL_RX_TOP_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source CLRX_YV_CL_RX_TOP_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1525.293 ; gain = 64.012 ; free physical = 4517 ; free virtual = 78561
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bipin/CameraLink_hash/DEV/7series/RX_Project/RX.v1/dual_cl_rx_7s_ip_encrypt_2019.2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip'.
+Command: synth_design -top CLRX_YV_CL_RX_TOP_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16794 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2011.262 ; gain = 201.715 ; free physical = 396 ; free virtual = 74005
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CLRX_YV_CL_RX_TOP_0_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/synth/CLRX_YV_CL_RX_TOP_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'YV_CL_RX_TOP' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ipshared/6422/src/YV_CL_RX_TOP.v:19]
+INFO: [Synth 8-6157] synthesizing module 'LUT5' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5' (1#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized0' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized0' (1#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6157] synthesizing module 'LUT4' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4' (2#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13708]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (3#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13708]
+INFO: [Synth 8-6157] synthesizing module 'DNA_PORT' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:11968]
+INFO: [Synth 8-6155] done synthesizing module 'DNA_PORT' (4#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:11968]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized1' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized1' (4#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6157] synthesizing module 'LUT2' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2' (5#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+INFO: [Synth 8-6157] synthesizing module 'LDCE' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:38802]
+INFO: [Synth 8-6155] done synthesizing module 'LDCE' (6#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:38802]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized0' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized0' (6#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6157] synthesizing module 'LUT3' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3' (7#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized0' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized0' (7#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+INFO: [Synth 8-6157] synthesizing module 'GND' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:14687]
+INFO: [Synth 8-6155] done synthesizing module 'GND' (8#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:14687]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized2' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized2' (8#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized0' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized0' (8#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13708]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (8#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:13708]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39089]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (9#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39089]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized1' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized1' (9#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (9#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized1' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized1' (9#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized3' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized3' (9#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized4' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized4' (9#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6157] synthesizing module 'LUT6' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6' (10#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT5__parameterized5' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6155] done synthesizing module 'LUT5__parameterized5' (10#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39249]
+INFO: [Synth 8-6157] synthesizing module 'VCC' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:81656]
+INFO: [Synth 8-6155] done synthesizing module 'VCC' (11#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:81656]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized2' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized2' (11#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized0' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized0' (11#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized2' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized2' (11#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39203]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized1' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized1' (11#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized2' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+INFO: [Synth 8-6155] done synthesizing module 'LUT2__parameterized2' (11#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39123]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized2' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized2' (11#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized3' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized3' (11#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39161]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized3' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized3' (11#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'LUT6__parameterized4' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6155] done synthesizing module 'LUT6__parameterized4' (11#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39299]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1479]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (13#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1479]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (16#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (17#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35014]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (18#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35014]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32952]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (20#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32952]
+INFO: [Synth 8-6157] synthesizing module 'RAM32X1D' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:70440]
+INFO: [Synth 8-6155] done synthesizing module 'RAM32X1D' (22#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:70440]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_DIFF_OUT' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:33005]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_DIFF_OUT' (23#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:33005]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35027]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (24#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35027]
+INFO: [Synth 8-6157] synthesizing module 'ISERDESE2' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:38572]
+INFO: [Synth 8-6155] done synthesizing module 'ISERDESE2' (25#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:38572]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2__parameterized0' [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35027]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2__parameterized0' (26#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/scripts/rt/data/unisim_comp.v:35027]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async' [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2029]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+	Parameter COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 28 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 12 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1707 - type: string 
+	Parameter READ_MODE bound to: 0 - type: integer 
+	Parameter FIFO_READ_LATENCY bound to: 1 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 28 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 5 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter invalid bound to: 0 - type: integer 
+	Parameter stage1_valid bound to: 2 - type: integer 
+	Parameter stage2_valid bound to: 1 - type: integer 
+	Parameter both_stages_valid bound to: 3 - type: integer 
+	Parameter FIFO_MEM_TYPE bound to: 0 - type: integer 
+	Parameter RD_MODE bound to: 0 - type: integer 
+	Parameter ENABLE_ECC bound to: 0 - type: integer 
+	Parameter FIFO_READ_DEPTH bound to: 16 - type: integer 
+	Parameter FIFO_SIZE bound to: 448 - type: integer 
+	Parameter WR_WIDTH_LOG bound to: 5 - type: integer 
+	Parameter WR_DEPTH_LOG bound to: 4 - type: integer 
+	Parameter WR_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter RD_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter FULL_RST_VAL bound to: 1'b0 
+	Parameter WR_RD_RATIO bound to: 0 - type: integer 
+	Parameter PF_THRESH_ADJ bound to: 12 - type: integer 
+	Parameter PE_THRESH_ADJ bound to: 5 - type: integer 
+	Parameter PF_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PF_THRESH_MAX bound to: 13 - type: integer 
+	Parameter PE_THRESH_MIN bound to: 3 - type: integer 
+	Parameter PE_THRESH_MAX bound to: 13 - type: integer 
+	Parameter WR_DC_WIDTH_EXT bound to: 5 - type: integer 
+	Parameter RD_DC_WIDTH_EXT bound to: 5 - type: integer 
+	Parameter RD_LATENCY bound to: 1 - type: integer 
+	Parameter WIDTH_RATIO bound to: 1 - type: integer 
+	Parameter EN_ADV_FEATURE bound to: 16'b0001011100000111 
+	Parameter EN_OF bound to: 1'b1 
+	Parameter EN_PF bound to: 1'b1 
+	Parameter EN_WDC bound to: 1'b1 
+	Parameter EN_AF bound to: 1'b0 
+	Parameter EN_WACK bound to: 1'b0 
+	Parameter FG_EQ_ASYM_DOUT bound to: 1'b0 
+	Parameter EN_UF bound to: 1'b1 
+	Parameter EN_PE bound to: 1'b1 
+	Parameter EN_RDC bound to: 1'b1 
+	Parameter EN_AE bound to: 1'b0 
+	Parameter EN_DVLD bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 448 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 0 - type: integer 
+	Parameter CLOCKING_MODE bound to: 1 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 28 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 28 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 28 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 4 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 28 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 28 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 28 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 4 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 2 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: auto - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 28 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 28 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 28 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 28 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 16 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 28 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 28 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 28 - type: integer 
+	Parameter rstb_loop_iter bound to: 28 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 28 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:484]
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_ecc = "no_ecc" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (33#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:358]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (34#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec' [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1768]
+	Parameter REG_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (35#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1768]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter REG_OUTPUT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SIM_LOSSLESS_GRAY_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 5 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (35#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized0' [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1768]
+	Parameter REG_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (35#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1768]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1506]
+	Parameter COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_safe_state = "default_state" *) [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1574]
+INFO: [Synth 8-5534] Detected attribute (* fsm_safe_state = "default_state" *) [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1580]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+	Parameter DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+	Parameter INIT_SYNC_FF bound to: 1 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter DEF_VAL bound to: 1'b0 
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1111]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (36#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (37#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1506]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1790]
+	Parameter RST_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (38#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1790]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
+	Parameter COUNTER_WIDTH bound to: 5 - type: integer 
+	Parameter RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (39#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter RESET_VALUE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (39#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter RESET_VALUE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (39#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1742]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (40#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async' (41#1) [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2029]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+WARNING: [Synth 8-7023] instance 'yv_cl_rx_top_enc' of module 'YV_CL_RX_TOP_enc' has 66 connections declared, but only 63 given [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ipshared/6422/src/YV_CL_RX_TOP.v:118]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'YV_CL_RX_TOP' (45#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ipshared/6422/src/YV_CL_RX_TOP.v:19]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* ram_optimization = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_YV_CL_RX_TOP_0_0' (46#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/synth/CLRX_YV_CL_RX_TOP_0_0.v:57]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port sleep
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port rsta
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port regcea
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port injectsbiterra
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port injectdbiterra
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port regceb
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[27]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[26]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[25]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[24]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[23]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[22]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[21]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[20]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[19]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[18]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[17]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[16]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[15]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[14]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[13]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[12]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[11]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[10]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[9]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[8]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[7]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[6]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[5]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[4]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[3]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[2]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[1]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[0]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port injectsbiterrb
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port injectdbiterrb
+WARNING: [Synth 8-3331] design rx_sync_capture has unconnected port rst
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[31]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[30]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[29]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[28]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[27]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[26]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[25]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[24]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[23]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[22]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[21]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[20]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[19]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[18]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[17]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[16]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[15]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[14]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[13]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[12]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[11]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[10]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[9]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[8]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_cam_mode[7]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[31]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[30]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[29]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[28]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[27]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[26]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[25]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[24]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[23]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[22]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[21]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[20]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[19]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[18]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[17]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[16]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[15]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[14]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[13]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[12]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[11]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[10]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[9]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[8]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[7]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[6]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[5]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[4]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[3]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[2]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[1]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_val_bits[0]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_available_vals[31]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_available_vals[30]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_available_vals[29]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_available_vals[28]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_available_vals[27]
+WARNING: [Synth 8-3331] design rx_adaptor has unconnected port config_available_vals[26]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 2078.980 ; gain = 269.434 ; free physical = 629 ; free virtual = 74242
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2090.855 ; gain = 281.309 ; free physical = 497 ; free virtual = 74110
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2090.855 ; gain = 281.309 ; free physical = 497 ; free virtual = 74110
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2098.793 ; gain = 0.000 ; free physical = 584 ; free virtual = 74197
+INFO: [Netlist 29-17] Analyzing 115 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip_ooc.xdc] for cell 'inst'
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VirtualBitClock_X' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip_ooc.xdc:2]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VirtualBitClock_Y' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip_ooc.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'clk_z_p'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip_ooc.xdc:7]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VirtualBitClock_Z' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip_ooc.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'serial_z_p[*]'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip_ooc.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'serial_z_p[*]'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip_ooc.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'serial_z_n[*]'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip_ooc.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'serial_z_n[*]'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip_ooc.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'serial_z_p[*]'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip_ooc.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'serial_z_p[*]'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip_ooc.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'serial_z_n[*]'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip_ooc.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'serial_z_n[*]'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip_ooc.xdc:36]
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip_ooc.xdc] for cell 'inst'
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip_ooc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/CLRX_YV_CL_RX_TOP_0_0_synth_1/logs/.Xil_bipin/Vivado-15889-delltower5810/CLRX_YV_CL_RX_TOP_0_0_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/CLRX_YV_CL_RX_TOP_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/CLRX_YV_CL_RX_TOP_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc] for cell 'inst'
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ *hash_dna/DNA_i*/SLR_tmp_reg*/C}'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc:6]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ *cl_sync_capture_*/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem*/RAM*/WE}'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc:10]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ *proc_sys_reset_0*/U0/FDRE_inst/C}'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc:17]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ *proc_sys_reset_0*/U0/FDRE_inst/C}'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc:23]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ *proc_sys_reset_0*/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C}'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc:26]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ *YV_TOP*/YV_GPIO_s_axi_U/int_in*_V_reg[*]/D}'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc:74]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ *idelay*/CLK}'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc:81]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~  *rx_adap*/cl_sync_capture*/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg*/RAM*/WE}'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc:82]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ *YV_TOP*/hash_dna/DNA_i/SLR_tmp_reg[*]/C}'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc:85]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hier -filter {name =~ *YV_TOP*/hash_dna/DNA_i/SLR_tmp_reg[*]/C}'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc:87]
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc] for cell 'inst'
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/CLRX_YV_CL_RX_TOP_0_0_synth_1/logs/.Xil_bipin/Vivado-15889-delltower5810/CLRX_YV_CL_RX_TOP_0_0_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/CLRX_YV_CL_RX_TOP_0_0_synth_1/logs/.Xil_bipin/Vivado-15889-delltower5810/CLRX_YV_CL_RX_TOP_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/CLRX_YV_CL_RX_TOP_0_0_synth_1/logs/.Xil_bipin/Vivado-15889-delltower5810/CLRX_YV_CL_RX_TOP_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/CLRX_YV_CL_RX_TOP_0_0_synth_1/logs/.Xil_bipin/Vivado-15889-delltower5810/CLRX_YV_CL_RX_TOP_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/CLRX_YV_CL_RX_TOP_0_0_synth_1/logs/.Xil_bipin/Vivado-15889-delltower5810/CLRX_YV_CL_RX_TOP_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line'
+Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line'
+Finished Sourcing Tcl File [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/CLRX_YV_CL_RX_TOP_0_0_synth_1/logs/.Xil_bipin/Vivado-15889-delltower5810/CLRX_YV_CL_RX_TOP_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/CLRX_YV_CL_RX_TOP_0_0_synth_1/logs/.Xil_bipin/Vivado-15889-delltower5810/CLRX_YV_CL_RX_TOP_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2263.574 ; gain = 0.000 ; free physical = 459 ; free virtual = 74080
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 82 instances were transformed.
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (IBUFDS(x2)): 2 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 80 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.20 . Memory (MB): peak = 2269.512 ; gain = 5.938 ; free physical = 474 ; free virtual = 74095
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 2269.512 ; gain = 459.965 ; free physical = 442 ; free virtual = 73875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 2269.512 ; gain = 459.965 ; free physical = 441 ; free virtual = 73875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/CLRX_YV_CL_RX_TOP_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_dc_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_dc_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_dc_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_dc_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_dc_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_dc_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.rrst_wr_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.rrst_wr_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.rrst_wr_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.wrst_rd_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.wrst_rd_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line/\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.wrst_rd_inst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_X/mem_line. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Y/mem_line. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/yv_cl_rx_top_enc/rx_adap/cl_sync_capture_Z/mem_line. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 2269.512 ; gain = 459.965 ; free physical = 417 ; free virtual = 73851
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'minmax_fsm_reg' in module 'dser_mmcm'
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'YV_GPIO_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'YV_GPIO_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:855]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'rx_sync_capture__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__xdcDup__2'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:855]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'rx_sync_capture__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:855]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'rx_sync_capture'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+           SKIP_NONMATCH |                               00 |                             0001
+                  GETMAX |                               01 |                             0010
+                    DONE |                               10 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'minmax_fsm_reg' using encoding 'sequential' in module 'dser_mmcm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'YV_GPIO_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'YV_GPIO_s_axi'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst__xdcDup__1'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              000
+                   FIRST |                               01 |                              001
+                  SECOND |                               10 |                              010
+                   THIRD |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'rx_sync_capture__xdcDup__1'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst__xdcDup__2'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              000
+                   FIRST |                               01 |                              001
+                  SECOND |                               10 |                              010
+                   THIRD |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'rx_sync_capture__xdcDup__2'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              000
+                   FIRST |                               01 |                              001
+                  SECOND |                               10 |                              010
+                   THIRD |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'rx_sync_capture'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 2269.512 ; gain = 459.965 ; free physical = 492 ; free virtual = 73767
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 16    
+	   2 Input      6 Bit       Adders := 6     
+	   2 Input      5 Bit       Adders := 9     
+	   4 Input      5 Bit       Adders := 6     
+	   3 Input      5 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 15    
+	   4 Input      4 Bit       Adders := 9     
+	   3 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 4     
++---XORs : 
+	   2 Input      5 Bit         XORs := 6     
+	   2 Input      4 Bit         XORs := 6     
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	               32 Bit    Registers := 45    
+	               28 Bit    Registers := 6     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 37    
+	                7 Bit    Registers := 20    
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 53    
+	                4 Bit    Registers := 62    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 163   
++---RAMs : 
+	              448 Bit         RAMs := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 24    
+	  61 Input     32 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 12    
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 14    
+	   3 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 9     
+	   2 Input      6 Bit        Muxes := 2     
+	  61 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 30    
+	   6 Input      5 Bit        Muxes := 3     
+	   7 Input      4 Bit        Muxes := 4     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 27    
+	   5 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 18    
+	   2 Input      1 Bit        Muxes := 93    
+	   3 Input      1 Bit        Muxes := 12    
+	   7 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module bitslip_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module dser_mmcm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 7     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   7 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 24    
+	   3 Input      1 Bit        Muxes := 6     
+	   7 Input      1 Bit        Muxes := 2     
+Module deserializer_1to7 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module deserializer_4bit_1to7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 6     
+Module YV_GPIO_s_axi 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 41    
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 20    
+	  61 Input     32 Bit        Muxes := 1     
+	  61 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 20    
+Module xpm_memory_base 
+Detailed RTL Component Info : 
++---Registers : 
+	               28 Bit    Registers := 1     
++---RAMs : 
+	              448 Bit         RAMs := 1     
+Module xpm_cdc_gray 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	                4 Bit    Registers := 3     
+Module xpm_fifo_reg_vec 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module xpm_cdc_gray__parameterized0 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      5 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	                5 Bit    Registers := 3     
+Module xpm_fifo_reg_vec__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module xpm_cdc_sync_rst 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module xpm_fifo_rst__xdcDup__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 8     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 3     
+Module xpm_fifo_reg_bit 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module xpm_counter_updn 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+Module xpm_counter_updn__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module xpm_counter_updn__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module xpm_fifo_base__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module rx_sync_capture__xdcDup__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module xpm_fifo_rst__xdcDup__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 8     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 3     
+Module xpm_fifo_base__xdcDup__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module rx_sync_capture__xdcDup__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module xpm_fifo_rst 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 8     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 3     
+Module xpm_fifo_base 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module rx_sync_capture 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module rx_adaptor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
++---Registers : 
+	               28 Bit    Registers := 3     
+	                8 Bit    Registers := 9     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 13    
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module YV_CL_RX_TOP_enc 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_validz_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\rx_adap/data_z_reg_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/YV_TOP/\D_Top0/dser_mmcm_inst/tap_fsm_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/YV_TOP/\D_Top1/dser_mmcm_inst/tap_fsm_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in20_V_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in19_V_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in18_V_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in17_V_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in16_V_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in8_V_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in3_V_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in20_V_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in19_V_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in18_V_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in17_V_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in16_V_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in12_V_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in8_V_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in3_V_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in20_V_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in19_V_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in18_V_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in17_V_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in16_V_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in12_V_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in8_V_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in3_V_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in20_V_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in19_V_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in18_V_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in17_V_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in16_V_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in13_V_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in12_V_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in8_V_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in3_V_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in20_V_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in19_V_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in18_V_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in17_V_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in16_V_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in12_V_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in8_V_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in3_V_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in20_V_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in19_V_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in18_V_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in17_V_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in16_V_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in12_V_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in11_V_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in8_V_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in3_V_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in20_V_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in19_V_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in18_V_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in17_V_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in16_V_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in12_V_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in8_V_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in3_V_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in20_V_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in19_V_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in18_V_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in17_V_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in16_V_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in13_V_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in12_V_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in8_V_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in3_V_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in20_V_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in19_V_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/yv_cl_rx_top_enc/\YV_GPIO/YV_GPIO_s_axi_U /\int_in18_V_reg[8] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[26]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[25]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[24]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[23]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[22]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[21]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[20]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[19]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[17]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[16]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[15]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[14]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[13]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[12]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[11]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[10]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[8]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[7]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[6]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[5]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[4]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[3]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[2]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top0/deserializer_inst/px_data_reg[1]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[26]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[25]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[24]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[23]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[22]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[21]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[20]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[19]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[17]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[16]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[15]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[14]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[13]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[12]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[11]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[10]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[8]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[7]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[6]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[5]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[4]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[3]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[2]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (D_Top1/deserializer_inst/px_data_reg[1]) is unused and will be removed from module YV_CAMERALINK_TOP.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module YV_GPIO_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module YV_GPIO_s_axi.
+WARNING: [Synth 8-3332] Sequential element (rx_adap/cl_sync_capture_Z/FSM_sequential_state_reg[1]) is unused and will be removed from module YV_CL_RX_TOP_enc.
+WARNING: [Synth 8-3332] Sequential element (rx_adap/cl_sync_capture_Z/FSM_sequential_state_reg[0]) is unused and will be removed from module YV_CL_RX_TOP_enc.
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in20_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in19_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in18_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in17_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in16_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in15_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in14_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in13_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in12_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in11_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in10_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in9_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in8_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in7_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in6_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in5_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in4_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in3_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in2_V_ap_vld_reg' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in1_V_ap_vld_reg'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in13_V_reg[2]' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in13_V_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in13_V_reg[6]' (FDRE) to 'inst/yv_cl_rx_top_enc/YV_GPIO/YV_GPIO_s_axi_U/int_in13_V_reg[10]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:22 . Memory (MB): peak = 2269.512 ; gain = 459.965 ; free physical = 3083 ; free virtual = 75838
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++-----------------+----------------------------------+-----------+----------------------+-------------+
+|Module Name      | RTL Object                       | Inference | Size (Depth x Width) | Primitives  | 
++-----------------+----------------------------------+-----------+----------------------+-------------+
+|xpm_memory_base: | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 28              | RAM32M x 5	 | 
+|xpm_memory_base: | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 28              | RAM32M x 5	 | 
+|xpm_memory_base: | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 28              | RAM32M x 5	 | 
++-----------------+----------------------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+Reading logs//.Xil_bipin/Vivado-15889-delltower5810/realtime/CLRX_YV_CL_RX_TOP_0_0_synth.xdc
+WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 39 of /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc:39]
+WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 42 of /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc:42]
+WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 56 of /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc:56]
+WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 59 of /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc:59]
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:36 ; elapsed = 00:01:51 . Memory (MB): peak = 2269.512 ; gain = 459.965 ; free physical = 2627 ; free virtual = 75398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:37 ; elapsed = 00:01:52 . Memory (MB): peak = 2269.512 ; gain = 459.965 ; free physical = 2529 ; free virtual = 75301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++-----------------+----------------------------------+-----------+----------------------+-------------+
+|Module Name      | RTL Object                       | Inference | Size (Depth x Width) | Primitives  | 
++-----------------+----------------------------------+-----------+----------------------+-------------+
+|xpm_memory_base: | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 28              | RAM32M x 5	 | 
+|xpm_memory_base: | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 28              | RAM32M x 5	 | 
+|xpm_memory_base: | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 28              | RAM32M x 5	 | 
++-----------------+----------------------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:40 ; elapsed = 00:01:55 . Memory (MB): peak = 2269.512 ; gain = 459.965 ; free physical = 2314 ; free virtual = 75086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop YV_TOP/D_Top0/dser_mmcm_inst/rx_locked_ready_reg is being inverted and renamed to YV_TOP/D_Top0/dser_mmcm_inst/rx_locked_ready_reg_inv.
+INFO: [Synth 8-5365] Flop YV_TOP/D_Top1/dser_mmcm_inst/rx_locked_ready_reg is being inverted and renamed to YV_TOP/D_Top1/dser_mmcm_inst/rx_locked_ready_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:48 ; elapsed = 00:02:04 . Memory (MB): peak = 2269.512 ; gain = 459.965 ; free physical = 2211 ; free virtual = 74980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:48 ; elapsed = 00:02:04 . Memory (MB): peak = 2269.512 ; gain = 459.965 ; free physical = 2210 ; free virtual = 74979
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:49 ; elapsed = 00:02:04 . Memory (MB): peak = 2269.512 ; gain = 459.965 ; free physical = 2223 ; free virtual = 74991
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:49 ; elapsed = 00:02:04 . Memory (MB): peak = 2269.512 ; gain = 459.965 ; free physical = 2221 ; free virtual = 74989
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:49 ; elapsed = 00:02:04 . Memory (MB): peak = 2269.512 ; gain = 459.965 ; free physical = 2271 ; free virtual = 75040
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:49 ; elapsed = 00:02:04 . Memory (MB): peak = 2269.512 ; gain = 459.965 ; free physical = 2270 ; free virtual = 75038
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |BUFG            |     3|
+|2     |CARRY4          |    52|
+|3     |DNA_PORT        |     1|
+|4     |IDELAYCTRL      |     1|
+|5     |IDELAYE2        |     4|
+|6     |IDELAYE2_1      |     8|
+|7     |ISERDESE2       |    10|
+|8     |LUT1            |    78|
+|9     |LUT2            |   152|
+|10    |LUT3            |   936|
+|11    |LUT4            |   254|
+|12    |LUT5            |   236|
+|13    |LUT6            |   695|
+|14    |MUXF7           |   111|
+|15    |MUXF8           |     1|
+|16    |RAM32M          |    15|
+|17    |RAM32X1D        |    80|
+|18    |FDCE            |   336|
+|19    |FDPE            |    90|
+|20    |FDRE            |  1861|
+|21    |FDSE            |    15|
+|22    |LDCE            |     2|
+|23    |IBUF            |     1|
+|24    |IBUFDS          |     8|
+|25    |IBUFDS_DIFF_OUT |     2|
++------+----------------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------------+------------------------------------+------+
+|      |Instance                                           |Module                              |Cells |
++------+---------------------------------------------------+------------------------------------+------+
+|1     |top                                                |                                    |  4952|
+|2     |  inst                                             |YV_CL_RX_TOP                        |  4952|
+|3     |    yv_cl_rx_top_enc                               |YV_CL_RX_TOP_enc                    |  4952|
+|4     |      YV_GPIO                                      |YV_GPIO_2                           |  2063|
+|5     |        YV_GPIO_s_axi_U                            |YV_GPIO_s_axi                       |  2063|
+|6     |      YV_TOP                                       |YV_CAMERALINK_TOP                   |  1690|
+|7     |        D_Top0                                     |deserializer_top                    |   774|
+|8     |          bs00                                     |bitslip_gen_32                      |    21|
+|9     |          bs01                                     |bitslip_gen_33                      |     9|
+|10    |          bs02                                     |bitslip_gen_34                      |     9|
+|11    |          bs03                                     |bitslip_gen_35                      |     9|
+|12    |          bsclk0                                   |bitslip_gen_36                      |     9|
+|13    |          deserializer_inst                        |deserializer_4bit_1to7_37           |   256|
+|14    |            deserializer_1to7_inst_0               |deserializer_1to7_40                |    58|
+|15    |            deserializer_1to7_inst_1               |deserializer_1to7_41                |    58|
+|16    |            deserializer_1to7_inst_2               |deserializer_1to7_42                |    58|
+|17    |            deserializer_1to7_inst_3               |deserializer_1to7_43                |    58|
+|18    |          dser_io_block_inst                       |dser_io_block_38                    |     4|
+|19    |          dser_mmcm_inst                           |dser_mmcm_39                        |   457|
+|20    |        D_Top1                                     |deserializer_top_24                 |   771|
+|21    |          bs00                                     |bitslip_gen                         |    21|
+|22    |          bs01                                     |bitslip_gen_25                      |     9|
+|23    |          bs02                                     |bitslip_gen_26                      |     9|
+|24    |          bs03                                     |bitslip_gen_27                      |     9|
+|25    |          bsclk0                                   |bitslip_gen_28                      |     9|
+|26    |          deserializer_inst                        |deserializer_4bit_1to7              |   256|
+|27    |            deserializer_1to7_inst_0               |deserializer_1to7                   |    58|
+|28    |            deserializer_1to7_inst_1               |deserializer_1to7_29                |    58|
+|29    |            deserializer_1to7_inst_2               |deserializer_1to7_30                |    58|
+|30    |            deserializer_1to7_inst_3               |deserializer_1to7_31                |    58|
+|31    |          dser_io_block_inst                       |dser_io_block                       |     4|
+|32    |          dser_mmcm_inst                           |dser_mmcm                           |   454|
+|33    |        hash_dna                                   |hash_dna                            |   142|
+|34    |          inst                                     |CLRX_hash_dna_0_0_hash_dna          |   142|
+|35    |            DNA_i                                  |CLRX_hash_dna_0_0_DNA_Module        |   135|
+|36    |      rx_adap                                      |rx_adaptor                          |  1190|
+|37    |        cl_sync_capture_X                          |rx_sync_capture__xdcDup__1          |   298|
+|38    |          mem_line                                 |xpm_fifo_async__xdcDup__1           |   265|
+|39    |            \gnuram_async_fifo.xpm_fifo_base_inst  |xpm_fifo_base__xdcDup__1            |   265|
+|40    |              \gen_sdpram.xpm_memory_base_inst     |xpm_memory_base__3                  |    33|
+|41    |              \gen_cdc_pntr.wr_pntr_cdc_inst       |xpm_cdc_gray__6                     |    18|
+|42    |              \gen_cdc_pntr.wr_pntr_cdc_dc_inst    |xpm_cdc_gray__parameterized0__6     |    23|
+|43    |              \gen_cdc_pntr.rd_pntr_cdc_inst       |xpm_cdc_gray__7                     |    18|
+|44    |              \gen_cdc_pntr.rd_pntr_cdc_dc_inst    |xpm_cdc_gray__parameterized0__7     |    23|
+|45    |              \gen_cdc_pntr.rpw_gray_reg           |xpm_fifo_reg_vec_14                 |    10|
+|46    |              \gen_cdc_pntr.rpw_gray_reg_dc        |xpm_fifo_reg_vec__parameterized0_15 |     9|
+|47    |              \gen_cdc_pntr.wpr_gray_reg           |xpm_fifo_reg_vec_16                 |     8|
+|48    |              \gen_cdc_pntr.wpr_gray_reg_dc        |xpm_fifo_reg_vec__parameterized0_17 |     6|
+|49    |              rdp_inst                             |xpm_counter_updn_18                 |    18|
+|50    |              rdpp1_inst                           |xpm_counter_updn__parameterized0_19 |     8|
+|51    |              rst_d1_inst                          |xpm_fifo_reg_bit_20                 |     3|
+|52    |              wrp_inst                             |xpm_counter_updn_21                 |    11|
+|53    |              wrpp1_inst                           |xpm_counter_updn__parameterized0_22 |     9|
+|54    |              wrpp2_inst                           |xpm_counter_updn__parameterized1_23 |     8|
+|55    |              xpm_fifo_rst_inst                    |xpm_fifo_rst__xdcDup__1             |    38|
+|56    |                \gen_rst_ic.wrst_rd_inst           |xpm_cdc_sync_rst__6                 |     2|
+|57    |                \gen_rst_ic.rrst_wr_inst           |xpm_cdc_sync_rst__7                 |     2|
+|58    |        cl_sync_capture_Y                          |rx_sync_capture__xdcDup__2          |   300|
+|59    |          mem_line                                 |xpm_fifo_async__xdcDup__2           |   265|
+|60    |            \gnuram_async_fifo.xpm_fifo_base_inst  |xpm_fifo_base__xdcDup__2            |   265|
+|61    |              \gen_sdpram.xpm_memory_base_inst     |xpm_memory_base__4                  |    33|
+|62    |              \gen_cdc_pntr.wr_pntr_cdc_inst       |xpm_cdc_gray__8                     |    18|
+|63    |              \gen_cdc_pntr.wr_pntr_cdc_dc_inst    |xpm_cdc_gray__parameterized0__8     |    23|
+|64    |              \gen_cdc_pntr.rd_pntr_cdc_inst       |xpm_cdc_gray__9                     |    18|
+|65    |              \gen_cdc_pntr.rd_pntr_cdc_dc_inst    |xpm_cdc_gray__parameterized0__9     |    23|
+|66    |              \gen_cdc_pntr.rpw_gray_reg           |xpm_fifo_reg_vec_4                  |    10|
+|67    |              \gen_cdc_pntr.rpw_gray_reg_dc        |xpm_fifo_reg_vec__parameterized0_5  |     9|
+|68    |              \gen_cdc_pntr.wpr_gray_reg           |xpm_fifo_reg_vec_6                  |     8|
+|69    |              \gen_cdc_pntr.wpr_gray_reg_dc        |xpm_fifo_reg_vec__parameterized0_7  |     6|
+|70    |              rdp_inst                             |xpm_counter_updn_8                  |    18|
+|71    |              rdpp1_inst                           |xpm_counter_updn__parameterized0_9  |     8|
+|72    |              rst_d1_inst                          |xpm_fifo_reg_bit_10                 |     3|
+|73    |              wrp_inst                             |xpm_counter_updn_11                 |    11|
+|74    |              wrpp1_inst                           |xpm_counter_updn__parameterized0_12 |     9|
+|75    |              wrpp2_inst                           |xpm_counter_updn__parameterized1_13 |     8|
+|76    |              xpm_fifo_rst_inst                    |xpm_fifo_rst__xdcDup__2             |    38|
+|77    |                \gen_rst_ic.wrst_rd_inst           |xpm_cdc_sync_rst__8                 |     2|
+|78    |                \gen_rst_ic.rrst_wr_inst           |xpm_cdc_sync_rst__9                 |     2|
+|79    |        cl_sync_capture_Z                          |rx_sync_capture                     |   266|
+|80    |          mem_line                                 |xpm_fifo_async                      |   265|
+|81    |            \gnuram_async_fifo.xpm_fifo_base_inst  |xpm_fifo_base                       |   265|
+|82    |              \gen_sdpram.xpm_memory_base_inst     |xpm_memory_base                     |    33|
+|83    |              \gen_cdc_pntr.wr_pntr_cdc_inst       |xpm_cdc_gray__10                    |    18|
+|84    |              \gen_cdc_pntr.wr_pntr_cdc_dc_inst    |xpm_cdc_gray__parameterized0__10    |    23|
+|85    |              \gen_cdc_pntr.rd_pntr_cdc_inst       |xpm_cdc_gray                        |    18|
+|86    |              \gen_cdc_pntr.rd_pntr_cdc_dc_inst    |xpm_cdc_gray__parameterized0        |    23|
+|87    |              \gen_cdc_pntr.rpw_gray_reg           |xpm_fifo_reg_vec                    |    10|
+|88    |              \gen_cdc_pntr.rpw_gray_reg_dc        |xpm_fifo_reg_vec__parameterized0    |     9|
+|89    |              \gen_cdc_pntr.wpr_gray_reg           |xpm_fifo_reg_vec_0                  |     8|
+|90    |              \gen_cdc_pntr.wpr_gray_reg_dc        |xpm_fifo_reg_vec__parameterized0_1  |     6|
+|91    |              rdp_inst                             |xpm_counter_updn                    |    18|
+|92    |              rdpp1_inst                           |xpm_counter_updn__parameterized0    |     8|
+|93    |              rst_d1_inst                          |xpm_fifo_reg_bit                    |     3|
+|94    |              wrp_inst                             |xpm_counter_updn_2                  |    11|
+|95    |              wrpp1_inst                           |xpm_counter_updn__parameterized0_3  |     9|
+|96    |              wrpp2_inst                           |xpm_counter_updn__parameterized1    |     8|
+|97    |              xpm_fifo_rst_inst                    |xpm_fifo_rst                        |    38|
+|98    |                \gen_rst_ic.wrst_rd_inst           |xpm_cdc_sync_rst__10                |     2|
+|99    |                \gen_rst_ic.rrst_wr_inst           |xpm_cdc_sync_rst                    |     2|
++------+---------------------------------------------------+------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:49 ; elapsed = 00:02:04 . Memory (MB): peak = 2269.512 ; gain = 459.965 ; free physical = 2270 ; free virtual = 75038
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 191 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:37 ; elapsed = 00:01:52 . Memory (MB): peak = 2269.512 ; gain = 281.309 ; free physical = 2299 ; free virtual = 75068
+Synthesis Optimization Complete : Time (s): cpu = 00:01:49 ; elapsed = 00:02:05 . Memory (MB): peak = 2269.512 ; gain = 459.965 ; free physical = 2298 ; free virtual = 75066
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2269.512 ; gain = 0.000 ; free physical = 2257 ; free virtual = 75025
+INFO: [Netlist 29-17] Analyzing 291 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 4 inverter(s) to 12 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2269.512 ; gain = 0.000 ; free physical = 2118 ; free virtual = 74887
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 97 instances were transformed.
+  IBUFDS_DIFF_OUT => IBUFDS_DIFF_OUT (IBUFDS(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 15 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 80 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+333 Infos, 180 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:10 ; elapsed = 00:02:32 . Memory (MB): peak = 2269.512 ; gain = 709.500 ; free physical = 2215 ; free virtual = 74985
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2269.512 ; gain = 0.000 ; free physical = 2213 ; free virtual = 74983
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/CLRX_YV_CL_RX_TOP_0_0_synth_1/CLRX_YV_CL_RX_TOP_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP CLRX_YV_CL_RX_TOP_0_0, cache-ID = 04889856f54456b4
+INFO: [Coretcl 2-1174] Renamed 98 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2293.523 ; gain = 0.000 ; free physical = 1850 ; free virtual = 74616
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/CLRX_YV_CL_RX_TOP_0_0_synth_1/CLRX_YV_CL_RX_TOP_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CLRX_YV_CL_RX_TOP_0_0_utilization_synth.rpt -pb CLRX_YV_CL_RX_TOP_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 20 16:48:20 2022...

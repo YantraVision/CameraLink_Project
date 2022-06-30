@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1655726092">
+  <File Type="VDS-TIMINGSUMMARY" Name="CLRX_wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="CLRX_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="CLRX_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="CLRX_wrapper_utilization_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="CLRX_wrapper_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="CLRX_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="CLRX_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="CLRX_wrapper.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="CLRX_wrapper_drc_synth.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Common/YV_OBUFDS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Common/YV_OBUFDS.v"/>
+        <Attr Name="ImportTime" Val="1652706245"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Common/data_mux.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Common/data_mux.v"/>
+        <Attr Name="ImportTime" Val="1652706245"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/CLRX/CLRX.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/CLRX_wrapper.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../rtl/CLRX_wrapper.v"/>
+        <Attr Name="ImportTime" Val="1655718296"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Common/counter.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Common/counter.v"/>
+        <Attr Name="ImportTime" Val="1652706245"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="CLRX_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../scripts/7series_iWave_yv_cl_io.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../../scripts/7series_iWave_yv_cl_io.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_system_ila_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_axis_data_fifo_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_s00_data_fifo_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_axi_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_YV_OBUFDS_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_auto_pc_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_YV_CL_RX_TOP_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_axi_dma_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_axi_uart16550_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_auto_pc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_util_ds_buf_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_clk_wiz_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_auto_pc_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_data_mux_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_proc_sys_reset_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_auto_pc_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_auto_pc_7"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_auto_pc_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_s00_regslice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CLRX_auto_pc_6"/>
+</GenRun>

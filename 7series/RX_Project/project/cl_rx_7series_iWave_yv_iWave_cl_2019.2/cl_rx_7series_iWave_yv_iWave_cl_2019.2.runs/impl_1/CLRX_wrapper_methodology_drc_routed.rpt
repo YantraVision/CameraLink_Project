@@ -1,0 +1,431 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Mon Jun 20 17:38:07 2022
+| Host         : delltower5810 running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_methodology -file CLRX_wrapper_methodology_drc_routed.rpt -pb CLRX_wrapper_methodology_drc_routed.pb -rpx CLRX_wrapper_methodology_drc_routed.rpx
+| Design       : CLRX_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 70
++-----------+------------------+-------------------------------------------------+------------+
+| Rule      | Severity         | Description                                     | Violations |
++-----------+------------------+-------------------------------------------------+------------+
+| TIMING-2  | Critical Warning | Invalid primary clock source pin                | 2          |
+| TIMING-6  | Critical Warning | No common primary clock between related clocks  | 2          |
+| TIMING-7  | Critical Warning | No common node between related clocks           | 2          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                    | 8          |
+| PDRC-190  | Warning          | Suboptimally placed synchronized register chain | 10         |
+| TIMING-9  | Warning          | Unknown CDC Logic                               | 1          |
+| TIMING-10 | Warning          | Missing property on synchronizer                | 1          |
+| TIMING-18 | Warning          | Missing input or output delay                   | 4          |
+| TIMING-20 | Warning          | Non-clocked latch                               | 2          |
+| TIMING-24 | Warning          | Overridden Max delay datapath only              | 2          |
+| XDCB-5    | Warning          | Runtime inefficient way to find pin objects     | 36         |
++-----------+------------------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-2#1 Critical Warning
+Invalid primary clock source pin  
+A primary clock CLRX_i/clk_wiz_0/inst/clk_in1 is created on an inappropriate pin CLRX_i/clk_wiz_0/inst/clk_in1. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-2#2 Critical Warning
+Invalid primary clock source pin  
+A primary clock CLRX_i/clk_wiz_1/inst/clk_in1 is created on an inappropriate pin CLRX_i/clk_wiz_1/inst/clk_in1. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_out1_CLRX_clk_wiz_0_0 and clk_fpga_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_CLRX_clk_wiz_0_0] -to [get_clocks clk_fpga_0]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_out1_CLRX_clk_wiz_1_0 and clk_fpga_0 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_CLRX_clk_wiz_1_0] -to [get_clocks clk_fpga_0]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks clk_out1_CLRX_clk_wiz_0_0 and clk_fpga_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_CLRX_clk_wiz_0_0] -to [get_clocks clk_fpga_0]
+Related violations: <none>
+
+TIMING-7#2 Critical Warning
+No common node between related clocks  
+The clocks clk_out1_CLRX_clk_wiz_1_0 and clk_fpga_0 are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_CLRX_clk_wiz_1_0] -to [get_clocks clk_fpga_0]
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell CLRX_i/YV_CL_RX_TOP_0/inst/yv_cl_rx_top_enc/YV_TOP/hash_dna/inst/dser_mmcm_inst/rx_reset_sync[3]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) CLRX_i/YV_CL_RX_TOP_0/inst/yv_cl_rx_top_enc/YV_TOP/D_Top0/dser_mmcm_inst/rx_reset_sync_reg[0]/PRE, CLRX_i/YV_CL_RX_TOP_0/inst/yv_cl_rx_top_enc/YV_TOP/D_Top0/dser_mmcm_inst/rx_reset_sync_reg[1]/PRE, CLRX_i/YV_CL_RX_TOP_0/inst/yv_cl_rx_top_enc/YV_TOP/D_Top0/dser_mmcm_inst/rx_reset_sync_reg[2]/PRE, CLRX_i/YV_CL_RX_TOP_0/inst/yv_cl_rx_top_enc/YV_TOP/D_Top0/dser_mmcm_inst/rx_reset_sync_reg[3]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell CLRX_i/YV_CL_RX_TOP_0/inst/yv_cl_rx_top_enc/YV_TOP/hash_dna/inst/dser_mmcm_inst/rx_reset_sync[3]_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) CLRX_i/YV_CL_RX_TOP_0/inst/yv_cl_rx_top_enc/YV_TOP/D_Top1/dser_mmcm_inst/rx_reset_sync_reg[0]/PRE, CLRX_i/YV_CL_RX_TOP_0/inst/yv_cl_rx_top_enc/YV_TOP/D_Top1/dser_mmcm_inst/rx_reset_sync_reg[1]/PRE, CLRX_i/YV_CL_RX_TOP_0/inst/yv_cl_rx_top_enc/YV_TOP/D_Top1/dser_mmcm_inst/rx_reset_sync_reg[2]/PRE, CLRX_i/YV_CL_RX_TOP_0/inst/yv_cl_rx_top_enc/YV_TOP/D_Top1/dser_mmcm_inst/rx_reset_sync_reg[3]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gc0.count_d1[4]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/gc0.count_d1[4]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i_reg/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[1]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[2]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[4]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[1]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[2]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[3]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[4]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_reg[0]/PRE, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[0]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[1]/CLR, CLRX_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_reg[2]/CLR (the first 15 of 32 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X92Y9 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X95Y8 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X93Y8 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X94Y8 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X97Y6 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X96Y5 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X96Y7 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X99Y12 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X98Y12 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X100Y12 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on SerTFG_n_0[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on XCLK_clk_n relative to clock(s) CLRX_i/clk_wiz_0/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on YCLK_clk_n relative to clock(s) CLRX_i/clk_wiz_1/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on SerTC_n_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch CLRX_i/YV_CL_RX_TOP_0/inst/yv_cl_rx_top_enc/YV_TOP/hash_dna/inst/DNA_i/FSM_sequential_NEXT_STATE_reg[0] cannot be properly analyzed as its control pin CLRX_i/YV_CL_RX_TOP_0/inst/yv_cl_rx_top_enc/YV_TOP/hash_dna/inst/DNA_i/FSM_sequential_NEXT_STATE_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch CLRX_i/YV_CL_RX_TOP_0/inst/yv_cl_rx_top_enc/YV_TOP/hash_dna/inst/DNA_i/FSM_sequential_NEXT_STATE_reg[1] cannot be properly analyzed as its control pin CLRX_i/YV_CL_RX_TOP_0/inst/yv_cl_rx_top_enc/YV_TOP/hash_dna/inst/DNA_i/FSM_sequential_NEXT_STATE_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-24#1 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 71 in the Timing Constraints window in Vivado IDE) between clocks clk_fpga_0 and clk_out1_CLRX_clk_wiz_0_0 overrides a set_max_delay -datapath_only (position 101). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+TIMING-24#2 Warning
+Overridden Max delay datapath only  
+A set_clock_groups or a set_false path (see constraint position 71 in the Timing Constraints window in Vivado IDE) between clocks clk_fpga_0 and clk_out1_CLRX_clk_wiz_1_0 overrides a set_max_delay -datapath_only (position 105). It is not recommended to override a set_max_delay -datapath_only constraint. Replace the set_clock_groups or set_false_path between clocks with point-to-point set_false_path constraints
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *YV_GPIO*/YV_GPIO_s_axi_U/int_out*_V_reg[*]/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '88' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 82)
+Related violations: <none>
+
+XDCB-5#2 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *YV_GPIO*/YV_GPIO_s_axi_U/int_out*_V_reg[*]/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '89' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 86)
+Related violations: <none>
+
+XDCB-5#3 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *YV_GPIO*/YV_GPIO_s_axi_U/int_out*_V_reg[*]/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '90' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 88)
+Related violations: <none>
+
+XDCB-5#4 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *YV_GPIO_s_axi_U*/int_out*_V_reg*/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '72' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 10)
+Related violations: <none>
+
+XDCB-5#5 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/deserializer_inst/deserializer_1to7_inst_*/genblk1*.mem/DP/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '80' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 56)
+Related violations: <none>
+
+XDCB-5#6 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/deserializer_inst/deserializer_1to7_inst_*/genblk1[*].mem/DP/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '77' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 42)
+Related violations: <none>
+
+XDCB-5#7 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/dser_mmcm_inst/clk_tap_reg*/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '84' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 71)
+Related violations: <none>
+
+XDCB-5#8 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/dser_mmcm_inst/genblk1*.mem/DP/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '81' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 59)
+Related violations: <none>
+
+XDCB-5#9 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/dser_mmcm_inst/genblk1[*].mem/DP/CLK}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '76' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 39)
+Related violations: <none>
+
+XDCB-5#10 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/dser_mmcm_inst/px_data_reg[*]/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '85' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 75)
+Related violations: <none>
+
+XDCB-5#11 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/dser_mmcm_inst/px_data_reg[*]/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '87' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 79)
+Related violations: <none>
+
+XDCB-5#12 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/dser_mmcm_inst/px_ready_reg/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '91' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 89)
+Related violations: <none>
+
+XDCB-5#13 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/dser_mmcm_inst/rx_ready_reg/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '82' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 65)
+Related violations: <none>
+
+XDCB-5#14 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/dser_mmcm_inst/rx_reset_sync_reg*/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '83' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 68)
+Related violations: <none>
+
+XDCB-5#15 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/dser_mmcm_inst/tap*/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '86' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 78)
+Related violations: <none>
+
+XDCB-5#16 Warning
+Runtime inefficient way to find pin objects  
+The option '-from : [get_pins -hier -filter {name =~ *hash_dna*/DNA_i/SLR_tmp_reg[*]/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '74' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 20)
+Related violations: <none>
+
+XDCB-5#17 Warning
+Runtime inefficient way to find pin objects  
+The option '-through : [get_pins -hier -filter {name =~ *YV_GPIO*/YV_GPIO_s_axi_U/int_in*_V_reg[*]/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '79' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 53)
+Related violations: <none>
+
+XDCB-5#18 Warning
+Runtime inefficient way to find pin objects  
+The option '-through : [get_pins -hier -filter {name =~ *YV_GPIO*/YV_GPIO_s_axi_U/int_out*_V_reg[*]*/C}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '73' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 14)
+Related violations: <none>
+
+XDCB-5#19 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~  *rx_adap*/cl_sync_capture*/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg*/RAM*/WE}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '88' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 82)
+Related violations: <none>
+
+XDCB-5#20 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *YV_GPIO*/YV_GPIO_s_axi_U/int_in*_V_reg[*]/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '85' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 75)
+Related violations: <none>
+
+XDCB-5#21 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *YV_GPIO*/YV_GPIO_s_axi_U/int_in*_V_reg[*]/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '86' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 78)
+Related violations: <none>
+
+XDCB-5#22 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *YV_GPIO*/YV_GPIO_s_axi_U/int_in*_V_reg[*]/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '87' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 79)
+Related violations: <none>
+
+XDCB-5#23 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *YV_GPIO*/YV_GPIO_s_axi_U/int_in*_V_reg[*]/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '91' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 89)
+Related violations: <none>
+
+XDCB-5#24 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/deserializer_inst/deserializer_1to7_inst_*/iserdes_ddr*/DDLY}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '75' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 28)
+Related violations: <none>
+
+XDCB-5#25 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/deserializer_inst/deserializer_1to7_inst_*/px_data_reg*/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '80' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 56)
+Related violations: <none>
+
+XDCB-5#26 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/deserializer_inst/deserializer_1to7_inst_*/px_rd_last_reg*/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '77' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 42)
+Related violations: <none>
+
+XDCB-5#27 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/deserializer_inst/deserializer_1to7_inst_*/rx_wr_data_reg[*]/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '90' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 88)
+Related violations: <none>
+
+XDCB-5#28 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/dser_mmcm_inst/idelay_cs/CNTVALUEIN*}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '84' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 71)
+Related violations: <none>
+
+XDCB-5#29 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/dser_mmcm_inst/px_data_reg*/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '81' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 59)
+Related violations: <none>
+
+XDCB-5#30 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/dser_mmcm_inst/px_rd_last_reg[*]/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '76' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 39)
+Related violations: <none>
+
+XDCB-5#31 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/dser_mmcm_inst/px_reset_sync_reg*/PRE}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '83' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 68)
+Related violations: <none>
+
+XDCB-5#32 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/dser_mmcm_inst/px_rx_ready_sync_reg*/CLR}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '82' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 65)
+Related violations: <none>
+
+XDCB-5#33 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/dser_mmcm_inst/rx_ready_reg/D}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '74' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 20)
+Related violations: <none>
+
+XDCB-5#34 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *YV_TOP*/D_Top*/dser_mmcm_inst/rx_reset_sync_reg[*]/PRE}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '89' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 86)
+Related violations: <none>
+
+XDCB-5#35 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *cl_sync_capture_*/mem_line/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem*/RAM*/WE}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '72' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 10)
+Related violations: <none>
+
+XDCB-5#36 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -filter {name =~ *iserdes_*/DDLY}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '78' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/src/7s_cl_rx_ip.xdc (Line: 44)
+Related violations: <none>
+
+

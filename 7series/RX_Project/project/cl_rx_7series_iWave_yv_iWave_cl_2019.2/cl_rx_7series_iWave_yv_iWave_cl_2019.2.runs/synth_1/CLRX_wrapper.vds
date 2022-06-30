@@ -1,0 +1,726 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jun 20 17:24:58 2022
+# Process ID: 9687
+# Current directory: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1
+# Command line: vivado -log CLRX_wrapper.vds -tempDir logs/ -product Vivado -mode batch -messageDb vivado.pb -notrace -source CLRX_wrapper.tcl
+# Log file: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/CLRX_wrapper.vds
+# Journal file: /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source CLRX_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bipin/CameraLink_hash/DEV/7series/RX_Project/RX.v1/dual_cl_rx_7s_ip_encrypt_2019.2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/XilinxTools/2019.2/Vivado/2019.2/data/ip'.
+add_files: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1907.176 ; gain = 356.102 ; free physical = 6776 ; free virtual = 79689
+Command: synth_design -top CLRX_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10309 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2088.293 ; gain = 181.117 ; free physical = 6278 ; free virtual = 79179
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CLRX_wrapper' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/imports/rtl/CLRX_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'CLRX' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:13]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_YV_CL_RX_TOP_0_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_YV_CL_RX_TOP_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_YV_CL_RX_TOP_0_0' (1#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_YV_CL_RX_TOP_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'YV_CL_RX_TOP_0' of module 'CLRX_YV_CL_RX_TOP_0_0' has 63 connections declared, but only 54 given [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:344]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_YV_OBUFDS_1_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_YV_OBUFDS_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_YV_OBUFDS_1_0' (2#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_YV_OBUFDS_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_axi_dma_1_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_axi_dma_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_axi_dma_1_0' (3#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_axi_dma_1_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_dma_1' of module 'CLRX_axi_dma_1_0' has 43 connections declared, but only 40 given [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:403]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_axi_gpio_0_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_axi_gpio_0_0' (4#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_axi_interconnect_0_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:985]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1OT4N3A' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:6982]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_auto_pc_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_auto_pc_0' (5#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_s00_data_fifo_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_s00_data_fifo_0' (6#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_s00_regslice_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_s00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_s00_regslice_0' (7#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_s00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1OT4N3A' (8#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:6982]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_axi_interconnect_0_0' (9#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:985]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_axi_uart16550_1_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_axi_uart16550_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_axi_uart16550_1_0' (10#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_axi_uart16550_1_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_uart16550_1' of module 'CLRX_axi_uart16550_1_0' has 35 connections declared, but only 26 given [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:506]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_axis_data_fifo_0_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_axis_data_fifo_0_0' (11#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_axis_data_fifo_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axis_data_fifo_0' of module 'CLRX_axis_data_fifo_0_0' has 9 connections declared, but only 8 given [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:533]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_clk_wiz_0_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_clk_wiz_0_0' (12#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_clk_wiz_1_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_clk_wiz_1_0' (13#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_data_mux_0_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_data_mux_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_data_mux_0_0' (14#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_data_mux_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_proc_sys_reset_0_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_proc_sys_reset_0_0' (15#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'CLRX_proc_sys_reset_0_0' has 10 connections declared, but only 7 given [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:612]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_processing_system7_0_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_processing_system7_0_0' (16#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'CLRX_processing_system7_0_0' has 115 connections declared, but only 100 given [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:620]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_ps7_0_axi_periph_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:1185]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1KSJNRA' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:3897]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_auto_pc_1' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_auto_pc_1' (17#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'CLRX_auto_pc_1' has 60 connections declared, but only 58 given [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:4136]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1KSJNRA' (18#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:3897]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_MNCPDC' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:4197]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_auto_pc_2' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_auto_pc_2' (19#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_auto_pc_2_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'CLRX_auto_pc_2' has 60 connections declared, but only 58 given [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:4436]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_MNCPDC' (20#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:4197]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_CP1VOR' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:4497]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_auto_pc_3' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_auto_pc_3' (21#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_auto_pc_3_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'CLRX_auto_pc_3' has 60 connections declared, but only 58 given [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:4736]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_CP1VOR' (22#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:4497]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1D22F31' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:4797]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_auto_pc_4' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_auto_pc_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_auto_pc_4' (23#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_auto_pc_4_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'CLRX_auto_pc_4' has 60 connections declared, but only 57 given [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:5032]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1D22F31' (24#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:4797]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_1N3R2FX' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:5092]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_auto_pc_5' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_auto_pc_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_auto_pc_5' (25#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_auto_pc_5_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'CLRX_auto_pc_5' has 60 connections declared, but only 58 given [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:5331]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_1N3R2FX' (26#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:5092]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_JZNQLN' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:5392]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_JZNQLN' (27#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:5392]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_EJO9F4' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:5650]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_auto_pc_6' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_auto_pc_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_auto_pc_6' (28#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_auto_pc_6_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'CLRX_auto_pc_6' has 60 connections declared, but only 58 given [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:5889]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_EJO9F4' (29#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:5650]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_1AZY6RQ' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:5950]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_1AZY6RQ' (30#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:5950]
+INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_1Z0QKA8' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:6208]
+INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_1Z0QKA8' (31#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:6208]
+INFO: [Synth 8-6157] synthesizing module 'm09_couplers_imp_RGMP1I' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:6466]
+INFO: [Synth 8-6155] done synthesizing module 'm09_couplers_imp_RGMP1I' (32#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:6466]
+INFO: [Synth 8-6157] synthesizing module 'm10_couplers_imp_WJZD9Q' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:6724]
+INFO: [Synth 8-6155] done synthesizing module 'm10_couplers_imp_WJZD9Q' (33#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:6724]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_2SAYWJ' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:7296]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_auto_pc_7' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_auto_pc_7_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_auto_pc_7' (34#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_auto_pc_7_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'CLRX_auto_pc_7' has 79 connections declared, but only 77 given [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:7611]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_2SAYWJ' (35#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:7296]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_xbar_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_xbar_0' (36#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (84) of port connection 'm_axi_arid' does not match port width (132) of module 'CLRX_xbar_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:3822]
+WARNING: [Synth 8-689] width (84) of port connection 'm_axi_awid' does not match port width (132) of module 'CLRX_xbar_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:3834]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_ps7_0_axi_periph_0' (37#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:1185]
+WARNING: [Synth 8-7023] instance 'ps7_0_axi_periph' of module 'CLRX_ps7_0_axi_periph_0' has 340 connections declared, but only 210 given [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:721]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:932]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_system_ila_3_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_system_ila_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_system_ila_3_0' (38#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_system_ila_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_util_ds_buf_2_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_util_ds_buf_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_util_ds_buf_2_0' (39#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_util_ds_buf_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_xlconcat_2_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_xlconcat_2_0/synth/CLRX_xlconcat_2_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 8 - type: integer 
+	Parameter IN1_WIDTH bound to: 8 - type: integer 
+	Parameter IN2_WIDTH bound to: 8 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 3 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 3 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 32 - type: integer 
+	Parameter NUM_PORTS bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (40#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_xlconcat_2_0' (41#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_xlconcat_2_0/synth/CLRX_xlconcat_2_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_xlconcat_3_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_xlconcat_3_0/synth/CLRX_xlconcat_3_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_xlconcat_3_0' (42#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_xlconcat_3_0/synth/CLRX_xlconcat_3_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_xlconstant_0_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_xlconstant_0_0/synth/CLRX_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (43#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_xlconstant_0_0' (44#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_xlconstant_0_0/synth/CLRX_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_xlconstant_1_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_xlconstant_1_0/synth/CLRX_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized0' (44#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_xlconstant_1_0' (45#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_xlconstant_1_0/synth/CLRX_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CLRX_xlslice_0_0' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_xlslice_0_0/synth/CLRX_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 3 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (46#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_xlslice_0_0' (47#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_xlslice_0_0/synth/CLRX_xlslice_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX' (48#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/synth/CLRX.v:13]
+WARNING: [Synth 8-7023] instance 'CLRX_i' of module 'CLRX' has 33 connections declared, but only 12 given [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/imports/rtl/CLRX_wrapper.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'CLRX_wrapper' (49#1) [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/imports/rtl/CLRX_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[31]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[30]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[29]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[28]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[27]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[26]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[25]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[24]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In31[0]
+WARNING: [Synth 8-3331] design s00_couplers_imp_2SAYWJ has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_2SAYWJ has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m10_couplers_imp_WJZD9Q has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m10_couplers_imp_WJZD9Q has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m10_couplers_imp_WJZD9Q has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m10_couplers_imp_WJZD9Q has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m09_couplers_imp_RGMP1I has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m09_couplers_imp_RGMP1I has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m09_couplers_imp_RGMP1I has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m09_couplers_imp_RGMP1I has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m08_couplers_imp_1Z0QKA8 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m08_couplers_imp_1Z0QKA8 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m08_couplers_imp_1Z0QKA8 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m08_couplers_imp_1Z0QKA8 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m07_couplers_imp_1AZY6RQ has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m07_couplers_imp_1AZY6RQ has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m07_couplers_imp_1AZY6RQ has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m07_couplers_imp_1AZY6RQ has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m06_couplers_imp_EJO9F4 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m06_couplers_imp_EJO9F4 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_JZNQLN has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_JZNQLN has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_JZNQLN has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_JZNQLN has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_1N3R2FX has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_1N3R2FX has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_1D22F31 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1D22F31 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_CP1VOR has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_CP1VOR has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_MNCPDC has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_MNCPDC has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_MNCPDC has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m01_couplers_imp_MNCPDC has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m01_couplers_imp_MNCPDC has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m01_couplers_imp_MNCPDC has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design m01_couplers_imp_MNCPDC has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design m01_couplers_imp_MNCPDC has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design m01_couplers_imp_MNCPDC has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design m01_couplers_imp_MNCPDC has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design m01_couplers_imp_MNCPDC has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design m01_couplers_imp_MNCPDC has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design m01_couplers_imp_MNCPDC has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design m01_couplers_imp_MNCPDC has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design m01_couplers_imp_MNCPDC has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design m01_couplers_imp_MNCPDC has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design m01_couplers_imp_MNCPDC has unconnected port S_AXI_araddr[17]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 2160.980 ; gain = 253.805 ; free physical = 6305 ; free virtual = 79207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2160.980 ; gain = 253.805 ; free physical = 6307 ; free virtual = 79209
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2160.980 ; gain = 253.805 ; free physical = 6307 ; free virtual = 79209
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2160.980 ; gain = 0.000 ; free physical = 6297 ; free virtual = 79199
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc] for cell 'CLRX_i/YV_CL_RX_TOP_0'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc] for cell 'CLRX_i/YV_CL_RX_TOP_0'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_OBUFDS_1_0/CLRX_YV_OBUFDS_1_0/CLRX_YV_OBUFDS_1_0_in_context.xdc] for cell 'CLRX_i/YV_OBUFDS_1'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_OBUFDS_1_0/CLRX_YV_OBUFDS_1_0/CLRX_YV_OBUFDS_1_0_in_context.xdc] for cell 'CLRX_i/YV_OBUFDS_1'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_axi_dma_1_0/CLRX_axi_dma_1_0/CLRX_axi_dma_1_0_in_context.xdc] for cell 'CLRX_i/axi_dma_1'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_axi_dma_1_0/CLRX_axi_dma_1_0/CLRX_axi_dma_1_0_in_context.xdc] for cell 'CLRX_i/axi_dma_1'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_axi_gpio_0_0/CLRX_axi_gpio_0_0/CLRX_axi_gpio_0_0_in_context.xdc] for cell 'CLRX_i/axi_gpio_0'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_axi_gpio_0_0/CLRX_axi_gpio_0_0/CLRX_axi_gpio_0_0_in_context.xdc] for cell 'CLRX_i/axi_gpio_0'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_s00_regslice_0/CLRX_s00_regslice_0/CLRX_s00_regslice_0_in_context.xdc] for cell 'CLRX_i/axi_interconnect_0/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_s00_regslice_0/CLRX_s00_regslice_0/CLRX_s00_regslice_0_in_context.xdc] for cell 'CLRX_i/axi_interconnect_0/s00_couplers/s00_regslice'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_s00_data_fifo_0/CLRX_s00_data_fifo_0/CLRX_s00_data_fifo_0_in_context.xdc] for cell 'CLRX_i/axi_interconnect_0/s00_couplers/s00_data_fifo'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_s00_data_fifo_0/CLRX_s00_data_fifo_0/CLRX_s00_data_fifo_0_in_context.xdc] for cell 'CLRX_i/axi_interconnect_0/s00_couplers/s00_data_fifo'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_auto_pc_0/CLRX_auto_pc_0/CLRX_auto_pc_0_in_context.xdc] for cell 'CLRX_i/axi_interconnect_0/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_auto_pc_0/CLRX_auto_pc_0/CLRX_auto_pc_0_in_context.xdc] for cell 'CLRX_i/axi_interconnect_0/s00_couplers/auto_pc'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_axi_uart16550_1_0/CLRX_axi_uart16550_1_0/CLRX_axi_uart16550_1_0_in_context.xdc] for cell 'CLRX_i/axi_uart16550_1'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_axi_uart16550_1_0/CLRX_axi_uart16550_1_0/CLRX_axi_uart16550_1_0_in_context.xdc] for cell 'CLRX_i/axi_uart16550_1'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_axis_data_fifo_0_0/CLRX_axis_data_fifo_0_0/CLRX_axis_data_fifo_0_0_in_context.xdc] for cell 'CLRX_i/axis_data_fifo_0'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_axis_data_fifo_0_0/CLRX_axis_data_fifo_0_0/CLRX_axis_data_fifo_0_0_in_context.xdc] for cell 'CLRX_i/axis_data_fifo_0'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_clk_wiz_0_0/CLRX_clk_wiz_0_0/CLRX_clk_wiz_0_0_in_context.xdc] for cell 'CLRX_i/clk_wiz_0'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_clk_wiz_0_0/CLRX_clk_wiz_0_0/CLRX_clk_wiz_0_0_in_context.xdc] for cell 'CLRX_i/clk_wiz_0'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_clk_wiz_1_0/CLRX_clk_wiz_1_0/CLRX_clk_wiz_1_0_in_context.xdc] for cell 'CLRX_i/clk_wiz_1'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_clk_wiz_1_0/CLRX_clk_wiz_1_0/CLRX_clk_wiz_1_0_in_context.xdc] for cell 'CLRX_i/clk_wiz_1'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_data_mux_0_0/CLRX_data_mux_0_0/CLRX_data_mux_0_0_in_context.xdc] for cell 'CLRX_i/data_mux_0'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_data_mux_0_0/CLRX_data_mux_0_0/CLRX_data_mux_0_0_in_context.xdc] for cell 'CLRX_i/data_mux_0'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_proc_sys_reset_0_0/CLRX_proc_sys_reset_0_0/CLRX_proc_sys_reset_0_0_in_context.xdc] for cell 'CLRX_i/proc_sys_reset_0'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_proc_sys_reset_0_0/CLRX_proc_sys_reset_0_0/CLRX_proc_sys_reset_0_0_in_context.xdc] for cell 'CLRX_i/proc_sys_reset_0'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_processing_system7_0_0/CLRX_processing_system7_0_0/CLRX_processing_system7_0_0_in_context.xdc] for cell 'CLRX_i/processing_system7_0'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_processing_system7_0_0/CLRX_processing_system7_0_0/CLRX_processing_system7_0_0_in_context.xdc] for cell 'CLRX_i/processing_system7_0'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_xbar_0/CLRX_xbar_0/CLRX_xbar_0_in_context.xdc] for cell 'CLRX_i/ps7_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_xbar_0/CLRX_xbar_0/CLRX_xbar_0_in_context.xdc] for cell 'CLRX_i/ps7_0_axi_periph/xbar'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_auto_pc_7/CLRX_auto_pc_7/CLRX_auto_pc_7_in_context.xdc] for cell 'CLRX_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_auto_pc_7/CLRX_auto_pc_7/CLRX_auto_pc_7_in_context.xdc] for cell 'CLRX_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_auto_pc_1/CLRX_auto_pc_1/CLRX_auto_pc_1_in_context.xdc] for cell 'CLRX_i/ps7_0_axi_periph/m00_couplers/auto_pc'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_auto_pc_1/CLRX_auto_pc_1/CLRX_auto_pc_1_in_context.xdc] for cell 'CLRX_i/ps7_0_axi_periph/m00_couplers/auto_pc'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_auto_pc_2/CLRX_auto_pc_2/CLRX_auto_pc_2_in_context.xdc] for cell 'CLRX_i/ps7_0_axi_periph/m01_couplers/auto_pc'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_auto_pc_2/CLRX_auto_pc_2/CLRX_auto_pc_2_in_context.xdc] for cell 'CLRX_i/ps7_0_axi_periph/m01_couplers/auto_pc'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_auto_pc_3/CLRX_auto_pc_3/CLRX_auto_pc_1_in_context.xdc] for cell 'CLRX_i/ps7_0_axi_periph/m02_couplers/auto_pc'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_auto_pc_3/CLRX_auto_pc_3/CLRX_auto_pc_1_in_context.xdc] for cell 'CLRX_i/ps7_0_axi_periph/m02_couplers/auto_pc'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_auto_pc_4/CLRX_auto_pc_4/CLRX_auto_pc_1_in_context.xdc] for cell 'CLRX_i/ps7_0_axi_periph/m03_couplers/auto_pc'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_auto_pc_4/CLRX_auto_pc_4/CLRX_auto_pc_1_in_context.xdc] for cell 'CLRX_i/ps7_0_axi_periph/m03_couplers/auto_pc'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_auto_pc_5/CLRX_auto_pc_5/CLRX_auto_pc_1_in_context.xdc] for cell 'CLRX_i/ps7_0_axi_periph/m04_couplers/auto_pc'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_auto_pc_5/CLRX_auto_pc_5/CLRX_auto_pc_1_in_context.xdc] for cell 'CLRX_i/ps7_0_axi_periph/m04_couplers/auto_pc'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_auto_pc_6/CLRX_auto_pc_6/CLRX_auto_pc_1_in_context.xdc] for cell 'CLRX_i/ps7_0_axi_periph/m06_couplers/auto_pc'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_auto_pc_6/CLRX_auto_pc_6/CLRX_auto_pc_1_in_context.xdc] for cell 'CLRX_i/ps7_0_axi_periph/m06_couplers/auto_pc'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_system_ila_3_0/CLRX_system_ila_3_0/CLRX_system_ila_3_0_in_context.xdc] for cell 'CLRX_i/system_ila_3'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_system_ila_3_0/CLRX_system_ila_3_0/CLRX_system_ila_3_0_in_context.xdc] for cell 'CLRX_i/system_ila_3'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_util_ds_buf_2_0/CLRX_util_ds_buf_2_0/CLRX_util_ds_buf_2_0_in_context.xdc] for cell 'CLRX_i/util_ds_buf_2'
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_util_ds_buf_2_0/CLRX_util_ds_buf_2_0/CLRX_util_ds_buf_2_0_in_context.xdc] for cell 'CLRX_i/util_ds_buf_2'
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/scripts/7series_iWave_yv_cl_io.xdc]
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_0'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/scripts/7series_iWave_yv_cl_io.xdc:76]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/scripts/7series_iWave_yv_cl_io.xdc:76]
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_0'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/scripts/7series_iWave_yv_cl_io.xdc:77]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/scripts/7series_iWave_yv_cl_io.xdc:77]
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_0'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/scripts/7series_iWave_yv_cl_io.xdc:79]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/scripts/7series_iWave_yv_cl_io.xdc:79]
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_0'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/scripts/7series_iWave_yv_cl_io.xdc:80]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/scripts/7series_iWave_yv_cl_io.xdc:80]
+WARNING: [Vivado 12-627] No clocks matched 'clk_fpga_0'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/scripts/7series_iWave_yv_cl_io.xdc:98]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/scripts/7series_iWave_yv_cl_io.xdc:98]
+WARNING: [Vivado 12-508] No pins matched 'CLRX_i/clk_wiz_*/inst/CLK_CORE_DRP_I/clk_inst/mmcm_adv_inst/CLKOUT*'. [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/scripts/7series_iWave_yv_cl_io.xdc:98]
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/scripts/7series_iWave_yv_cl_io.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/scripts/7series_iWave_yv_cl_io.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/CLRX_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/scripts/7series_iWave_yv_cl_io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/CLRX_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/logs/.Xil_bipin/Vivado-9687-delltower5810/CLRX_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2267.652 ; gain = 0.000 ; free physical = 6200 ; free virtual = 79102
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2267.652 ; gain = 0.000 ; free physical = 6200 ; free virtual = 79102
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 2267.652 ; gain = 360.477 ; free physical = 6251 ; free virtual = 79167
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 2267.652 ; gain = 360.477 ; free physical = 6251 ; free virtual = 79167
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for XCLK_clk_n. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for XCLK_clk_n. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for XCLK_clk_p. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for XCLK_clk_p. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for YCLK_clk_n. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for YCLK_clk_n. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for YCLK_clk_p. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for YCLK_clk_p. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for Xn[0]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Xn[0]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for Xn[1]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Xn[1]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for Xn[2]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Xn[2]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for Xn[3]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Xn[3]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for X[0]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for X[0]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for X[1]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for X[1]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for X[2]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for X[2]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for X[3]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for X[3]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for Yn[0]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Yn[0]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for Yn[1]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Yn[1]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for Yn[2]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Yn[2]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for Yn[3]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Yn[3]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for Y[0]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Y[0]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for Y[1]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Y[1]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for Y[2]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Y[2]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for Y[3]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Y[3]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0/CLRX_YV_CL_RX_TOP_0_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for SerTC_n_0. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_OBUFDS_1_0/CLRX_YV_OBUFDS_1_0/CLRX_YV_OBUFDS_1_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for SerTC_n_0. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_OBUFDS_1_0/CLRX_YV_OBUFDS_1_0/CLRX_YV_OBUFDS_1_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for SerTC_p_0. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_OBUFDS_1_0/CLRX_YV_OBUFDS_1_0/CLRX_YV_OBUFDS_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for SerTC_p_0. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_YV_OBUFDS_1_0/CLRX_YV_OBUFDS_1_0/CLRX_YV_OBUFDS_1_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for SerTFG_n_0[0]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_util_ds_buf_2_0/CLRX_util_ds_buf_2_0/CLRX_util_ds_buf_2_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for SerTFG_n_0[0]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_util_ds_buf_2_0/CLRX_util_ds_buf_2_0/CLRX_util_ds_buf_2_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for SerTFG_p_0[0]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_util_ds_buf_2_0/CLRX_util_ds_buf_2_0/CLRX_util_ds_buf_2_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for SerTFG_p_0[0]. (constraint file  /home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.srcs/sources_1/bd/CLRX/ip/CLRX_util_ds_buf_2_0/CLRX_util_ds_buf_2_0/CLRX_util_ds_buf_2_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for CLRX_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/YV_CL_RX_TOP_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/YV_OBUFDS_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/axi_dma_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/axi_interconnect_0/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/axi_interconnect_0/s00_couplers/s00_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/axi_interconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/axi_uart16550_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/axis_data_fifo_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/data_mux_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/proc_sys_reset_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/processing_system7_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/ps7_0_axi_periph/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/ps7_0_axi_periph/m01_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/ps7_0_axi_periph/m02_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/ps7_0_axi_periph/m03_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/ps7_0_axi_periph/m04_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/ps7_0_axi_periph/m06_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/ps7_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/system_ila_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/util_ds_buf_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/xlconcat_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/xlconcat_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/xlconstant_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for CLRX_i/xlslice_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 2267.652 ; gain = 360.477 ; free physical = 6251 ; free virtual = 79167
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 2267.652 ; gain = 360.477 ; free physical = 6250 ; free virtual = 79169
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2267.652 ; gain = 360.477 ; free physical = 6231 ; free virtual = 79154
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+Reading logs//.Xil_bipin/Vivado-9687-delltower5810/realtime/CLRX_wrapper_synth.xdc
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:54 . Memory (MB): peak = 2267.652 ; gain = 360.477 ; free physical = 6108 ; free virtual = 79033
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:54 . Memory (MB): peak = 2267.652 ; gain = 360.477 ; free physical = 6108 ; free virtual = 79032
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 2267.652 ; gain = 360.477 ; free physical = 6108 ; free virtual = 79033
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 2267.652 ; gain = 360.477 ; free physical = 6108 ; free virtual = 79033
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 2267.652 ; gain = 360.477 ; free physical = 6108 ; free virtual = 79033
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 2267.652 ; gain = 360.477 ; free physical = 6108 ; free virtual = 79033
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 2267.652 ; gain = 360.477 ; free physical = 6108 ; free virtual = 79033
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 2267.652 ; gain = 360.477 ; free physical = 6108 ; free virtual = 79033
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 2267.652 ; gain = 360.477 ; free physical = 6108 ; free virtual = 79033
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------+----------+
+|      |BlackBox name               |Instances |
++------+----------------------------+----------+
+|1     |CLRX_auto_pc_0              |         1|
+|2     |CLRX_s00_data_fifo_0        |         1|
+|3     |CLRX_s00_regslice_0         |         1|
+|4     |CLRX_xbar_0                 |         1|
+|5     |CLRX_auto_pc_1              |         1|
+|6     |CLRX_auto_pc_2              |         1|
+|7     |CLRX_auto_pc_3              |         1|
+|8     |CLRX_auto_pc_4              |         1|
+|9     |CLRX_auto_pc_5              |         1|
+|10    |CLRX_auto_pc_6              |         1|
+|11    |CLRX_auto_pc_7              |         1|
+|12    |CLRX_YV_CL_RX_TOP_0_0       |         1|
+|13    |CLRX_YV_OBUFDS_1_0          |         1|
+|14    |CLRX_axi_dma_1_0            |         1|
+|15    |CLRX_axi_gpio_0_0           |         1|
+|16    |CLRX_axi_uart16550_1_0      |         1|
+|17    |CLRX_axis_data_fifo_0_0     |         1|
+|18    |CLRX_clk_wiz_0_0            |         1|
+|19    |CLRX_clk_wiz_1_0            |         1|
+|20    |CLRX_data_mux_0_0           |         1|
+|21    |CLRX_proc_sys_reset_0_0     |         1|
+|22    |CLRX_processing_system7_0_0 |         1|
+|23    |CLRX_system_ila_3_0         |         1|
+|24    |CLRX_util_ds_buf_2_0        |         1|
++------+----------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |CLRX_YV_CL_RX_TOP_0_0       |     1|
+|2     |CLRX_YV_OBUFDS_1_0          |     1|
+|3     |CLRX_auto_pc_0              |     1|
+|4     |CLRX_auto_pc_1              |     1|
+|5     |CLRX_auto_pc_2              |     1|
+|6     |CLRX_auto_pc_3              |     1|
+|7     |CLRX_auto_pc_4              |     1|
+|8     |CLRX_auto_pc_5              |     1|
+|9     |CLRX_auto_pc_6              |     1|
+|10    |CLRX_auto_pc_7              |     1|
+|11    |CLRX_axi_dma_1_0            |     1|
+|12    |CLRX_axi_gpio_0_0           |     1|
+|13    |CLRX_axi_uart16550_1_0      |     1|
+|14    |CLRX_axis_data_fifo_0_0     |     1|
+|15    |CLRX_clk_wiz_0_0            |     1|
+|16    |CLRX_clk_wiz_1_0            |     1|
+|17    |CLRX_data_mux_0_0           |     1|
+|18    |CLRX_proc_sys_reset_0_0     |     1|
+|19    |CLRX_processing_system7_0_0 |     1|
+|20    |CLRX_s00_data_fifo_0        |     1|
+|21    |CLRX_s00_regslice_0         |     1|
+|22    |CLRX_system_ila_3_0         |     1|
+|23    |CLRX_util_ds_buf_2_0        |     1|
+|24    |CLRX_xbar_0                 |     1|
++------+----------------------------+------+
+
+Report Instance Areas: 
++------+-----------------------+--------------------------+------+
+|      |Instance               |Module                    |Cells |
++------+-----------------------+--------------------------+------+
+|1     |top                    |                          |  4682|
+|2     |  CLRX_i               |CLRX                      |  4682|
+|3     |    axi_interconnect_0 |CLRX_axi_interconnect_0_0 |   304|
+|4     |      s00_couplers     |s00_couplers_imp_1OT4N3A  |   304|
+|5     |    ps7_0_axi_periph   |CLRX_ps7_0_axi_periph_0   |  3412|
+|6     |      m00_couplers     |m00_couplers_imp_1KSJNRA  |   177|
+|7     |      m01_couplers     |m01_couplers_imp_MNCPDC   |   139|
+|8     |      m02_couplers     |m02_couplers_imp_CP1VOR   |   177|
+|9     |      m03_couplers     |m03_couplers_imp_1D22F31  |   177|
+|10    |      m04_couplers     |m04_couplers_imp_1N3R2FX  |   177|
+|11    |      m06_couplers     |m06_couplers_imp_EJO9F4   |   177|
+|12    |      s00_couplers     |s00_couplers_imp_2SAYWJ   |   254|
+|13    |    xlconcat_2         |CLRX_xlconcat_2_0         |     0|
+|14    |    xlconcat_3         |CLRX_xlconcat_3_0         |     0|
+|15    |    xlconstant_0       |CLRX_xlconstant_0_0       |     0|
+|16    |    xlconstant_1       |CLRX_xlconstant_1_0       |     0|
+|17    |    xlslice_0          |CLRX_xlslice_0_0          |     0|
++------+-----------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 2267.652 ; gain = 360.477 ; free physical = 6108 ; free virtual = 79033
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 52 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:55 . Memory (MB): peak = 2267.652 ; gain = 253.805 ; free physical = 6162 ; free virtual = 79087
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:01:02 . Memory (MB): peak = 2267.652 ; gain = 360.477 ; free physical = 6162 ; free virtual = 79087
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2267.652 ; gain = 0.000 ; free physical = 6231 ; free virtual = 79156
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2267.652 ; gain = 0.000 ; free physical = 6170 ; free virtual = 79095
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+119 Infos, 125 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:28 . Memory (MB): peak = 2267.652 ; gain = 360.477 ; free physical = 6294 ; free virtual = 79218
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2267.652 ; gain = 0.000 ; free physical = 6294 ; free virtual = 79218
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/bipin/CameraLink_hash/DEV/7series/RX_Project/project/cl_rx_7series_iWave_yv_iWave_cl_2019.2/cl_rx_7series_iWave_yv_iWave_cl_2019.2.runs/synth_1/CLRX_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CLRX_wrapper_utilization_synth.rpt -pb CLRX_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 20 17:26:57 2022...

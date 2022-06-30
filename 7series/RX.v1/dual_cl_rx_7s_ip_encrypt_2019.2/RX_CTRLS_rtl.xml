@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:abstractionDefinition xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>YANTRAVISION</spirit:vendor>
+  <spirit:library>YV_CL</spirit:library>
+  <spirit:name>RX_CTRLS_rtl</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busType spirit:vendor="YANTRAVISION" spirit:library="YV_CL" spirit:name="RX_CTRLS" spirit:version="1.0"/>
+  <spirit:ports>
+    <spirit:port>
+      <spirit:logicalName>SOF_x</spirit:logicalName>
+      <spirit:wire/>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>SOF_dual_y</spirit:logicalName>
+      <spirit:wire/>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>EOL_x</spirit:logicalName>
+      <spirit:wire/>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>EOL_dual_y</spirit:logicalName>
+      <spirit:wire/>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>strb_ABC_val_x</spirit:logicalName>
+      <spirit:wire/>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>strb_DEF_val_y</spirit:logicalName>
+      <spirit:wire/>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>strb_GHI_val_z</spirit:logicalName>
+      <spirit:wire/>
+    </spirit:port>
+  </spirit:ports>
+</spirit:abstractionDefinition>
